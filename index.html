@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilwale Coins</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin: 20px 0;
+            color: #4682b4;
+            font-size: 2.5em;
+        }
+        h2 {
+            margin: 5px 0;
+            color: #4682b4;
+            font-size: 1.5em;
+        }
+        table {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px 0;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #4682b4;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+            th, td {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Dilwale Coins</h1>
+<h2>सिक्कों की दुनिया, भरोसेमंद साथी।</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Coins</th>
+            <th>Price per Coin (in Rs)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 50-500 coins at 0.5 Rs per coin increment by 50 -->
+        <script>
+            for (let i = 50; i <= 500; i += 50) {
+                document.write('<tr>');
+                document.write('<td>' + i + '</td>');
+                document.write('<td>0.5</td>');
+                document.write('</tr>');
+            }
+        </script>
+        
+        <!-- 500-20000 coins at 0.47 Rs per coin increment by 500 -->
+        <script>
+            for (let i = 500; i <= 20000; i += 500) {
+                document.write('<tr>');
+                document.write('<td>' + i + '</td>');
+                document.write('<td>0.47</td>');
+                document.write('</tr>');
+            }
+        </script>
+        
+        <!-- 20000-100000 coins at 0.46 Rs per coin increment by 5000 -->
+        <script>
+            for (let i = 20000; i <= 100000; i += 5000) {
+                document.write('<tr>');
+                document.write('<td>' + i + '</td>');
+                document.write('<td>0.46</td>');
+                document.write('</tr>');
+            }
+        </script>
+    </tbody>
+</table>
+
+</body>
+</html>
