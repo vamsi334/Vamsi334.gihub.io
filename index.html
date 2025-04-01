@@ -90,10 +90,10 @@
         
         <!-- 500-20000 coins at 0.47 Rs per coin increment by 500 -->
         <script>
-            for (let i = 500; i <= 20000; i += 500) {
+            for (let i = 500; i < 20000; i += 500) {
                 document.write('<tr>');
                 document.write('<td>' + i + '</td>');
-                document.write('<td>0.47</td>');
+                document.write('<td>'+(0.47*i)+'</td>');
                 document.write('</tr>');
             }
         </script>
@@ -103,7 +103,7 @@
             for (let i = 20000; i <= 100000; i += 5000) {
                 document.write('<tr>');
                 document.write('<td>' + i + '</td>');
-                document.write('<td>0.46</td>');
+                document.write('<td>'+(0.46*i)+'</td>');
                 document.write('</tr>');
             }
         </script>
